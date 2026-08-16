@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report settimanale metriche youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">▶</span><span>studio<span class="brand-dot">.</span></span></div>
+        <div class="channel-switcher"><div class="channel-avatar">M</div><div><small>Canale attivo</small><strong>Marco Bianchi</strong></div><span class="chevron">⌄</span></div>
+        <nav class="nav" aria-label="Navigazione principale">
+          <a class="nav-item active" href="#overview"><span>⌂</span> Panoramica</a>
+          <a class="nav-item" href="#performance"><span>◒</span> Performance</a>
+          <a class="nav-item" href="#content"><span>▣</span> Contenuti</a>
+          <a class="nav-item" href="#audience"><span>◎</span> Pubblico</a>
+        </nav>
+        <div class="sidebar-footer"><a class="nav-item" href="#settings"><span>⚙</span> Impostazioni</a><div class="user-card"><div class="user-avatar">SB</div><div><strong>Salvatore</strong><small>Amministratore</small></div><span>⋯</span></div></div>
+      </aside>
+
+      <main class="main-content" id="overview">
+        <header class="topbar"><div class="breadcrumb"><span>Workspace</span><b>/</b><strong>Report settimanale</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifiche">♢<i></i></button><button class="export-button" id="exportButton">Esporta report <span>↗</span></button></div></header>
+        <section class="page-heading"><div><p class="eyebrow">ANALISI DEL CANALE</p><h1>Report settimanale <span>metriche youtube</span></h1><p class="subtitle">Una lettura chiara delle performance del tuo canale.</p></div><div class="date-control"><span>Periodo analizzato</span><button id="periodButton">12 — 18 ago 2024 <b>⌄</b></button></div></section>
+
+        <section class="hero-banner"><div class="hero-copy"><span class="live-dot"></span><p>AGGIORNAMENTO SETTIMANALE</p><h2>Il tuo canale sta<br /><em>crescendo bene.</em></h2><span class="hero-note">Rispetto alla settimana precedente</span></div><div class="hero-stat"><strong>+18,4%</strong><span>crescita complessiva</span><div class="sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="hero-decoration">↗</div></section>
+
+        <section class="section-header"><div><p class="eyebrow">PANORAMICA</p><h2>Numeri della settimana</h2></div><span class="status-pill"><i></i> Dati aggiornati oggi, 09:42</span></section>
+        <section class="kpi-grid" aria-label="KPI settimanali">
+          <article class="kpi-card"><div class="kpi-top"><span>Visualizzazioni</span><span class="kpi-icon red">◉</span></div><strong>248.392</strong><div class="trend up">↗ 12,8% <span>vs settimana prec.</span></div><div class="mini-bars"><i style="height:35%"></i><i style="height:48%"></i><i style="height:43%"></i><i style="height:69%"></i><i style="height:56%"></i><i style="height:82%"></i><i style="height:100%"></i></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>Tempo di visualizzazione</span><span class="kpi-icon orange">◷</span></div><strong>18.420 <small>ore</small></strong><div class="trend up">↗ 9,2% <span>vs settimana prec.</span></div><div class="mini-line orange-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>Iscritti netti</span><span class="kpi-icon purple">♧</span></div><strong>+1.842</strong><div class="trend up">↗ 24,6% <span>vs settimana prec.</span></div><div class="mini-line purple-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>CTR impressioni</span><span class="kpi-icon yellow">◌</span></div><strong>6,8<small>%</small></strong><div class="trend down">↘ 0,4% <span>vs settimana prec.</span></div><div class="mini-line yellow-line"></div></article>
+        </section>
+
+        <section class="dashboard-grid" id="performance">
+          <article class="card performance-card"><div class="card-heading"><div><p class="eyebrow">ANDAMENTO</p><h2>Performance nel tempo</h2></div><div class="legend"><span><i class="legend-red"></i> Visualizzazioni</span><span><i class="legend-orange"></i> Iscritti</span><button class="select-button">Ultimi 7 giorni ⌄</button></div></div><div class="chart-wrap"><div class="y-axis"><span>50k</span><span>40k</span><span>30k</span><span>20k</span><span>10k</span><span>0</span></div><div class="line-chart"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 700 250" preserveAspectRatio="none" aria-label="Grafico performance"><defs><linearGradient id="areaRed" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff3c3c" stop-opacity=".22"/><stop offset="1" stop-color="#ff3c3c" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 175 C35 170,55 151,94 163 S147 137,190 145 S233 108,278 119 S323 90,368 106 S412 84,457 98 S501 59,545 72 S593 41,630 57 S675 30,700 37 V250 H0Z"/><path class="red-line" d="M0 175 C35 170,55 151,94 163 S147 137,190 145 S233 108,278 119 S323 90,368 106 S412 84,457 98 S501 59,545 72 S593 41,630 57 S675 30,700 37"/><path class="orange-line-chart" d="M0 206 C43 202,61 198,94 202 S148 190,190 197 S236 174,278 182 S325 159,368 173 S417 149,457 157 S505 138,545 145 S595 119,630 133 S674 107,700 115"/></svg><div class="x-axis"><span>Lun 12</span><span>Mar 13</span><span>Mer 14</span><span>Gio 15</span><span>Ven 16</span><span>Sab 17</span><span>Dom 18</span></div></div></div></article>
+          <article class="card traffic-card" id="audience"><div class="card-heading"><div><p class="eyebrow">ACQUISIZIONE</p><h2>Da dove arrivano le views?</h2></div><button class="more-button" aria-label="Altre opzioni">•••</button></div><div class="donut-wrap"><div class="donut"><div><strong>248k</strong><span>views totali</span></div></div><div class="traffic-list"><div><i class="dot red-dot"></i><span>Video consigliati</span><strong>42,8%</strong></div><div><i class="dot orange-dot"></i><span>Ricerca YouTube</span><strong>27,4%</strong></div><div><i class="dot purple-dot"></i><span>Feed iscrizioni</span><strong>18,2%</strong></div><div><i class="dot gray-dot"></i><span>Altro</span><strong>11,6%</strong></div></div></div></article>
+        </section>
+
+        <section class="section-header content-title" id="content"><div><p class="eyebrow">CONTENUTI</p><h2>I video che hanno performato meglio</h2></div><a href="#content" class="see-all">Vedi tutti i video <span>→</span></a></section>
+        <section class="video-table card"><div class="table-row table-head"><span>VIDEO</span><span>VISUALIZZAZIONI</span><span>CTR</span><span>DURATA MEDIA</span><span>STATO</span></div><div class="table-row"><div class="video-name"><div class="thumbnail thumb-one">01</div><div><strong>Come far crescere un canale YouTube nel 2024</strong><small>Pubblicato 14 ago 2024</small></div></div><strong>86.240</strong><strong>8,4%</strong><strong>5:42</strong><span class="result good">Sopra la media</span></div><div class="table-row"><div class="video-name"><div class="thumbnail thumb-two">02</div><div><strong>La strategia che nessuno ti racconta</strong><small>Pubblicato 16 ago 2024</small></div></div><strong>54.180</strong><strong>7,1%</strong><strong>4:18</strong><span class="result good">Sopra la media</span></div><div class="table-row"><div class="video-name"><div class="thumbnail thumb-three">03</div><div><strong>3 errori da evitare quando inizi</strong><small>Pubblicato 12 ago 2024</small></div></div><strong>32.940</strong><strong>5,9%</strong><strong>3:56</strong><span class="result average">Nella media</span></div></section>
+        <footer>© 2024 Studio Analytics <span>•</span> Report generato automaticamente</footer>
+      </main>
+    </div>
+    <div class="toast" id="toast">Report pronto per il download ✓</div>
+    <script src="app.js"></script>
+  </body>
+</html>
