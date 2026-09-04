@@ -80,3 +80,28 @@
 }
 /* Black canvas */
 :root{--bg:#000}
+@media(max-width:560px){
+  .main-content{padding-top:max(14px,env(safe-area-inset-top));padding-right:max(14px,env(safe-area-inset-right));padding-bottom:max(14px,env(safe-area-inset-bottom));padding-left:max(14px,env(safe-area-inset-left))}
+  .page-heading>div:first-child{min-width:0}
+  .page-heading h1{overflow-wrap:anywhere}
+  .hero-copy{min-width:0;max-width:62%}
+  .hero-copy h2{overflow-wrap:anywhere}
+  .hero-stat{right:14px}
+  .dashboard-grid>.card{min-height:0;overflow:hidden}
+  .chart-wrap,.donut-wrap{min-height:0}
+}
+@media(max-width:380px){
+  .breadcrumb span,.breadcrumb b{display:none}
+  .page-heading{margin-top:18px}
+  .subtitle{display:none}
+  .hero-banner{min-height:102px;padding:14px}
+  .hero-copy h2{font-size:17px}
+  .hero-note{font-size:8px}
+  .kpi-card{min-height:88px;padding:8px}
+  .kpi-card>strong{font-size:17px}
+  .card{padding:9px}
+  .card-heading h2{font-size:12px}
+  .y-axis{display:none}
+  .traffic-list div{font-size:6px}
+  .traffic-list strong{font-size:7px}
+}
