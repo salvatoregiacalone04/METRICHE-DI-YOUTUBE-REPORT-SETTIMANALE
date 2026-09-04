@@ -62,5 +62,21 @@
   .traffic-list strong{font-size:8px}
   .content-title,.video-table,footer{display:none}
 }
+@media(min-width:561px){
+  .main-content{padding:20px 32px 28px}
+  .page-heading{margin:35px 0 20px}
+  .hero-banner{min-height:145px;margin-bottom:28px;padding:23px 30px}
+  .hero-copy h2{font-size:24px}
+  .hero-stat strong{font-size:34px}
+  .kpi-grid{margin-bottom:25px}
+  .kpi-card{min-height:140px;padding:15px}
+  .kpi-card>strong{margin-top:16px;font-size:24px}
+  .dashboard-grid{margin-bottom:28px}
+  .card{padding:16px}
+  .chart-wrap{height:210px;margin-top:18px}
+  .donut-wrap{gap:18px;margin-top:24px}
+  .donut{width:140px;height:140px}
+  .donut:after{width:94px;height:94px}
+}
 /* Black canvas */
 :root{--bg:#000}
