@@ -62,3 +62,5 @@
   .traffic-list strong{font-size:8px}
   .content-title,.video-table,footer{display:none}
 }
+/* Black canvas */
+:root{--bg:#000}
