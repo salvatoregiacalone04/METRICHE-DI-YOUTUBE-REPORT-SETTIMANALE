@@ -116,6 +116,7 @@
   .dashboard-grid>.card{min-height:0;overflow:hidden}
   .chart-wrap,.donut-wrap{min-height:0}
 }
+body.auth-pending{visibility:hidden}.logout-button{margin-left:auto;padding:3px;border:0;background:transparent;color:#a7a8b1;font:inherit;cursor:pointer}.logout-button:hover{color:#fff}
 @media(max-width:380px){
   .breadcrumb span,.breadcrumb b{display:none}
   .page-heading{margin-top:18px}

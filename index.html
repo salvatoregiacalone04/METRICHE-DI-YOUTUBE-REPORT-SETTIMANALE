@@ -28,7 +28,7 @@
           <a class="nav-item" href="#content"><span>▣</span> Contenuti</a>
           <a class="nav-item" href="#audience"><span>◎</span> Pubblico</a>
         </nav>
-        <div class="sidebar-footer"><a class="nav-item" href="#settings"><span>⚙</span> Impostazioni</a><div class="user-card"><div class="user-avatar">SB</div><div><strong>Salvatore</strong><small>Amministratore</small></div><span>⋯</span></div></div>
+        <div class="sidebar-footer"><a class="nav-item" href="#settings"><span>⚙</span> Impostazioni</a><div class="user-card"><div class="user-avatar" data-auth-user-avatar>SB</div><div><strong data-auth-user-name>Salvatore</strong><small>Amministratore</small></div><button class="logout-button" id="logoutButton" type="button" aria-label="Esci">↪</button></div></div>
       </aside>
 
       <main class="main-content" id="overview">
@@ -57,5 +57,6 @@
     </div>
     <div class="toast" id="toast">Report pronto per il download ✓</div>
     <script src="app.js"></script>
+    <script type="module" src="auth-guard.js"></script>
   </body>
 </html>

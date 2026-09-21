@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accedi · Studio Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-showcase" aria-label="Studio Analytics">
+        <div class="brand"><span class="brand-mark">▶</span><span>studio<span class="brand-dot">.</span></span></div>
+        <div class="showcase-copy"><p class="eyebrow">REPORT SETTIMANALE</p><h1>Le tue metriche,<br /><em>sempre a colpo d'occhio.</em></h1><p>Monitora la crescita del canale YouTube in uno spazio semplice, chiaro e privato.</p></div>
+        <div class="showcase-orbit"><span></span><i>+18,4%</i></div>
+      </section>
+      <section class="auth-card" aria-labelledby="auth-title">
+        <div class="auth-heading"><p class="eyebrow">BENTORNATO</p><h2 id="auth-title">Accedi alla dashboard</h2><p>Usa il tuo account per continuare.</p></div>
+        <div class="auth-actions"><button class="provider-button provider-google" data-provider="google" type="button"><span class="provider-icon">G</span>Continua con Google</button><button class="provider-button provider-github" data-provider="github" type="button"><span class="provider-icon">⌘</span>Continua con GitHub</button><button class="provider-button provider-microsoft" data-provider="microsoft" type="button"><span class="provider-icon">⊞</span>Continua con Microsoft</button></div>
+        <div class="auth-divider"><span>accesso sicuro</span></div><p class="auth-privacy">Accedendo accetti i termini del servizio e la privacy policy.</p>
+        <p class="auth-message" id="authMessage" role="alert" aria-live="polite"></p><p class="auth-config" id="authConfig" hidden>Configura Firebase per abilitare l'accesso OAuth.</p>
+      </section>
+    </main>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
