@@ -26,7 +26,12 @@ if (!isSupabaseConfigured || !supabase) {
 
     const { error } = await supabase.auth.signInWithOAuth({
       provider: button.dataset.provider,
-      options: { redirectTo: `${window.location.origin}/index.html` },
+      options: {
+        redirectTo: `${window.location.origin}/index.html`,
+        queryParams: {
+          access_type: 'offline',
+        },
+      },
     });
 
     if (error) {

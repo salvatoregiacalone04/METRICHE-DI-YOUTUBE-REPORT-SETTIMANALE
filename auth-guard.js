@@ -25,6 +25,27 @@ if (!isSupabaseConfigured || !supabase) {
     if (userName) userName.textContent = name;
     if (userAvatar) userAvatar.textContent = name.split(' ').map((part) => part[0]).join('').slice(0, 2).toUpperCase();
     document.querySelector('#logoutButton')?.addEventListener('click', () => supabase.auth.signOut());
+
+    document.querySelector('#youtubeReauthorizeButton')?.addEventListener('click', async (event) => {
+      const button = event.currentTarget;
+      button.disabled = true;
+
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `${window.location.origin}/index.html`,
+          queryParams: {
+            access_type: 'offline',
+            prompt: 'consent',
+          },
+        },
+      });
+
+      if (error) {
+        button.disabled = false;
+        button.setAttribute('aria-label', `Errore: ${error.message}`);
+      }
+    });
   };
 
   loadUser();
