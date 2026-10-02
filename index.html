@@ -8,15 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 800px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
   </head>
   <body>
     <section class="mobile-metrics-dashboard" aria-label="Metriche del canale">
       <div class="metrics-track">
-        <article class="metrics-panel"><div class="metrics-panel-head"><div><p class="eyebrow">01 / 03</p><h2>Coinvolgimento del canale</h2></div><span class="swipe-hint">Swipe <b>→</b></span></div><div class="metrics-cards"><article class="metric-card metric-red"><span>CTR impressioni</span><strong>6,8<small>%</small></strong><em>+0,4% questa settimana</em></article><article class="metric-card metric-orange"><span>Impressioni</span><strong>1,42<small>M</small></strong><em>+12,8% rispetto alla prec.</em></article><article class="metric-card metric-purple"><span>Spettatori</span><strong>684<small>K</small></strong><em>Nuovi spettatori <b>412K</b></em></article></div></article>
-        <article class="metrics-panel"><div class="metrics-panel-head"><div><p class="eyebrow">02 / 03</p><h2>Coinvolgimento del pubblico</h2></div><span class="swipe-hint">Swipe <b>→</b></span></div><div class="metrics-cards"><article class="metric-card metric-red"><span>AVD · durata media</span><strong>5:42</strong><em>+18 sec rispetto alla prec.</em></article><article class="metric-card metric-orange"><span>ARG · visualizzazione media</span><strong>48<small>%</small></strong><em>+3,2% questa settimana</em></article><article class="metric-card metric-purple"><span>Tasso di fidelizzazione</span><strong>72<small>%</small></strong><em>Pubblico di ritorno <b>+9,4%</b></em></article></div></article>
-        <article class="metrics-panel"><div class="metrics-panel-head"><div><p class="eyebrow">03 / 03</p><h2>Conversione dei prospect</h2></div><span class="swipe-hint">Swipe <b>→</b></span></div><div class="metrics-cards"><article class="metric-card metric-red"><span>CTA · click rate</span><strong>9,4<small>%</small></strong><em>+1,8% rispetto alla prec.</em></article><article class="metric-card metric-orange"><span>Interazioni</span><strong>28,6<small>K</small></strong><em>Like, commenti e condivisioni</em></article><article class="metric-card metric-purple"><span>Iscritti per video</span><strong>+1.842</strong><em>Conversione media <b>4,6%</b></em></article></div></article>
+        <article class="metrics-panel"><div class="metrics-panel-head"><div><p class="eyebrow">01 / 02</p><h2>Metriche principali</h2></div><span class="swipe-hint">Swipe <b>→</b></span></div><div class="metrics-cards"><article class="metric-card metric-red"><span>CTR impressioni</span><strong>6,8<small>%</small></strong><em>+0,4% questa settimana</em></article><article class="metric-card metric-orange"><span>Views</span><strong>248<small>K</small></strong><em>+12,8% rispetto alla prec.</em></article><article class="metric-card metric-purple"><span>AVD</span><strong>5:42</strong><em>+18 sec rispetto alla prec.</em></article></div></article>
+        <article class="metrics-panel"><div class="metrics-panel-head"><div><p class="eyebrow">02 / 02</p><h2>Metriche del canale</h2></div><span class="swipe-hint">Swipe <b>→</b></span></div><div class="metrics-cards"><article class="metric-card metric-red"><span>ARG</span><strong>48<small>%</small></strong><em>+3,2% questa settimana</em></article><article class="metric-card metric-orange"><span>Watch Time</span><strong>18,4<small>K ore</small></strong><em>+9,2% rispetto alla prec.</em></article><article class="metric-card metric-purple"><span>Iscritti Netti</span><strong>+1.842</strong><em>+24,6% rispetto alla prec.</em></article></div></article>
       </div>
-      <div class="metrics-dots" aria-label="Seleziona schermata"><button class="active" aria-label="Schermata 1"></button><button aria-label="Schermata 2"></button><button aria-label="Schermata 3"></button></div>
+      <div class="metrics-dots" aria-label="Seleziona schermata"><button class="active" aria-label="Schermata 1"></button><button aria-label="Schermata 2"></button></div>
     </section>
     <div class="app-shell">
       <aside class="sidebar">
@@ -39,10 +42,12 @@
 
         <section class="section-header"><div><p class="eyebrow">PANORAMICA</p><h2>Numeri della settimana</h2></div><span class="status-pill"><i></i> Dati aggiornati oggi, 09:42</span></section>
         <section class="kpi-grid" aria-label="KPI settimanali">
-          <article class="kpi-card"><div class="kpi-top"><span>Visualizzazioni</span><span class="kpi-icon red">◉</span></div><strong>248.392</strong><div class="trend up">↗ 12,8% <span>vs settimana prec.</span></div><div class="mini-bars"><i style="height:35%"></i><i style="height:48%"></i><i style="height:43%"></i><i style="height:69%"></i><i style="height:56%"></i><i style="height:82%"></i><i style="height:100%"></i></div></article>
-          <article class="kpi-card"><div class="kpi-top"><span>Tempo di visualizzazione</span><span class="kpi-icon orange">◷</span></div><strong>18.420 <small>ore</small></strong><div class="trend up">↗ 9,2% <span>vs settimana prec.</span></div><div class="mini-line orange-line"></div></article>
-          <article class="kpi-card"><div class="kpi-top"><span>Iscritti netti</span><span class="kpi-icon purple">♧</span></div><strong>+1.842</strong><div class="trend up">↗ 24,6% <span>vs settimana prec.</span></div><div class="mini-line purple-line"></div></article>
-          <article class="kpi-card"><div class="kpi-top"><span>CTR impressioni</span><span class="kpi-icon yellow">◌</span></div><strong>6,8<small>%</small></strong><div class="trend down">↘ 0,4% <span>vs settimana prec.</span></div><div class="mini-line yellow-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>CTR Impressioni</span><span class="kpi-icon red">◌</span></div><strong>6,8<small>%</small></strong><div class="trend down">↘ 0,4% <span>vs settimana prec.</span></div><div class="mini-line yellow-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>Views</span><span class="kpi-icon orange">◉</span></div><strong>248.392</strong><div class="trend up">↗ 12,8% <span>vs settimana prec.</span></div><div class="mini-bars"><i style="height:35%"></i><i style="height:48%"></i><i style="height:43%"></i><i style="height:69%"></i><i style="height:56%"></i><i style="height:82%"></i><i style="height:100%"></i></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>AVD</span><span class="kpi-icon purple">◷</span></div><strong>5:42</strong><div class="trend up">↗ 18 sec <span>vs settimana prec.</span></div><div class="mini-line purple-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>ARG</span><span class="kpi-icon yellow">◌</span></div><strong>48<small>%</small></strong><div class="trend up">↗ 3,2% <span>vs settimana prec.</span></div><div class="mini-line yellow-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>Watch Time</span><span class="kpi-icon orange">◷</span></div><strong>18.420 <small>ore</small></strong><div class="trend up">↗ 9,2% <span>vs settimana prec.</span></div><div class="mini-line orange-line"></div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>Iscritti Netti</span><span class="kpi-icon purple">♧</span></div><strong>+1.842</strong><div class="trend up">↗ 24,6% <span>vs settimana prec.</span></div><div class="mini-line purple-line"></div></article>
         </section>
 
         <section class="dashboard-grid" id="performance">
